@@ -1,6 +1,9 @@
 import React from 'react'
 import Image from "next/image";
 import Link from 'next/link';
+import { AiOutlineClose } from "react-icons/ai";
+import { AiOutlineMenu } from "react-icons/ai";
+import { MdDarkMode } from "react-icons/md";
 
 const Navbar = () => {
   return (
@@ -25,16 +28,29 @@ const Navbar = () => {
               <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Portfolio</li>
+              <li className="ml-10 text-sm uppercase hover:border-b">
+                Portfolio
+              </li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Contact</li>
+              <li className="ml-10 text-sm uppercase hover:border-b">
+                Contact
+              </li>
+            </Link>
+            <Link href="/">
+              <li className="ml-5 text-xl uppercase hover:border-b">
+                <MdDarkMode />
+              </li>
             </Link>
           </ul>
+          <div className="flex md:hidden gap-6">
+            <MdDarkMode size={25} />
+            <AiOutlineMenu size={25} />
+          </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Navbar
