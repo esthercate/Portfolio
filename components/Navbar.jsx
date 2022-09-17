@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState } from "react";
 import Image from "next/image";
-import Link from 'next/link';
+import Link from "next/link";
 import {
   AiOutlineClose,
   AiOutlineMenu,
@@ -9,9 +9,15 @@ import {
 } from "react-icons/ai";
 import { MdDarkMode } from "react-icons/md";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import {BsFillPersonCheckFill} from "react-icons/bs"
+import { BsFillPersonCheckFill } from "react-icons/bs";
 
 const Navbar = () => {
+  const [nav, setNav] = useState(false);
+
+  const handleNav = () => {
+    setNav(!nav);
+  };
+
   return (
     <div className="fixed w-full h-20 shadow-xl z-[100]">
       <div className="flex justify-between items-center w-full h-full px-6 2xl:px-16">
@@ -50,13 +56,28 @@ const Navbar = () => {
             </Link>
           </ul>
           <div className="flex md:hidden gap-6">
-            <MdDarkMode size={20} />
-            <AiOutlineMenu size={20} />
+            <div>
+              <MdDarkMode size={20} />
+            </div>
+            <div onClick={handleNav}>
+              <AiOutlineMenu size={20} />
+            </div>
           </div>
         </div>
       </div>
-      <div className="fixed left-0 top-0 w-full h-screen bg-black/50">
-        <div className="fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-8 ease-in duration-500">
+
+      <div
+        className={
+          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/50" : ""
+        }
+      >
+        <div
+          className={
+            nav
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-8 ease-in duration-500"
+              : "fixed left-[-100%] top-0 p-8 ease-in duration-500"
+          }
+        >
           <div>
             <div className="flex w-full items-center justify-between border-b border-gray-300 pb-5">
               <Image
@@ -65,7 +86,10 @@ const Navbar = () => {
                 height="35"
                 alt="/"
               />
-              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer">
+              <div
+                onClick={handleNav}
+                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
+              >
                 <AiOutlineClose size={20} />
               </div>
             </div>
@@ -89,7 +113,7 @@ const Navbar = () => {
               </ul>
               <div className="pt-40">
                 <p className="uppercase tracking-widest text-[#6fb632]">
-                  Let's Connect
+                  Lets Connect
                 </p>
                 <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                   <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
@@ -117,4 +141,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar
+export default Navbar;
