@@ -50,16 +50,19 @@ const Navbar = () => {
               </li>
             </Link>
             <Link href="/">
-              <li className="ml-5 text-xl uppercase hover:border-b">
+              <li className="ml-5 text-xl cursor-pointer hover:scale-105 ease-in duration-300">
                 <MdDarkMode />
               </li>
             </Link>
           </ul>
           <div className="flex md:hidden gap-6">
-            <div>
+            <div className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300">
               <MdDarkMode size={20} />
             </div>
-            <div onClick={handleNav}>
+            <div
+              onClick={handleNav}
+              className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-105 ease-in duration-300"
+            >
               <AiOutlineMenu size={20} />
             </div>
           </div>
@@ -127,9 +130,6 @@ const Navbar = () => {
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <AiOutlineMail size={20} />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <BsFillPersonCheckFill size={20} />
                   </div>
                 </div>
               </div>
