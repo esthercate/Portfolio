@@ -9,7 +9,6 @@ import {
 } from "react-icons/ai";
 import { MdDarkMode } from "react-icons/md";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { BsFillPersonCheckFill } from "react-icons/bs";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
