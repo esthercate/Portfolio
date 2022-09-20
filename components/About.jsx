@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { AiOutlineDownload } from "react-icons/ai";
 
 const About = () => {
   return (
@@ -28,22 +29,31 @@ const About = () => {
               developer, with extensive knowledge and years of experience,
               working in web technologies and UI/UX,delivering quality work.
             </p>
-            <div className="md:flex mt-12 justify-between text-gray-700">
+            <div className="flex mt-12 justify-between text-gray-700">
               <div className="text-center">
-                <h2>02+</h2>
+                <h2 className="text-[#6fb632]">02+</h2>
                 <p>Years</p>
                 <p>Experience</p>
               </div>
               <div className="text-center">
-                <h2>10+</h2>
+                <h2 className="text-[#6fb632]">10+</h2>
                 <p>Completed</p>
                 <p>Projects</p>
               </div>
               <div className="text-center">
-                <h2>03+</h2>
+                <h2 className="text-[#6fb632]">03+</h2>
                 <p>Companies</p>
                 <p>Worked</p>
               </div>
+            </div>
+            <div className="mt-12">
+              <button className="flex px-5 py-5 uppercase font-semibold">
+                Download Resume{" "}
+                <span className="text-2xl ml-4 font-bold">
+                  {" "}
+                  <AiOutlineDownload />
+                </span>{" "}
+              </button>
             </div>
           </div>
         </div>

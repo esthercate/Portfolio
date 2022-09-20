@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100]">
+    <div className="fixed w-full h-20 shadow-xl z-[1000]">
       <div className="flex justify-between items-center w-full h-full px-6 2xl:px-16">
         <Image
           src="/../public/assets/logo/catherine-removebg-preview.png"
