@@ -28,6 +28,23 @@ const About = () => {
               developer, with extensive knowledge and years of experience,
               working in web technologies and UI/UX,delivering quality work.
             </p>
+            <div className="md:flex mt-12 justify-between text-gray-700">
+              <div className="text-center">
+                <h2>02+</h2>
+                <p>Years</p>
+                <p>Experience</p>
+              </div>
+              <div className="text-center">
+                <h2>10+</h2>
+                <p>Completed</p>
+                <p>Projects</p>
+              </div>
+              <div className="text-center">
+                <h2>03+</h2>
+                <p>Companies</p>
+                <p>Worked</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
