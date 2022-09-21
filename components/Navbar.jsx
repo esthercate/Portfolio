@@ -21,7 +21,7 @@ const Navbar = () => {
     <div className="w-full h-20 shadow-xl fixed z-50">
       <div className="flex justify-between items-center w-full h-full px-6 2xl:px-16">
         <Image
-          src="/../public/assets/logo/catherine-removebg-preview.png"
+          src="/../public/assets/logo/logo.png"
           alt="/"
           width="250"
           height="60"
@@ -83,7 +83,7 @@ const Navbar = () => {
           <div>
             <div className="flex w-full items-center justify-between border-b border-gray-300 pb-5">
               <Image
-                src="/../public/assets/logo/catherine-removebg-preview.png"
+                src="/../public/assets/logo/logo.png"
                 width="100"
                 height="35"
                 alt="/"
