@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import { AiOutlineMail, AiOutlineTwitter } from "react-icons/ai";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -10,17 +12,57 @@ const Contact = () => {
         </p>
         <h2 className="py-4">Get in Touch</h2>
         <div className="grid lg:grid-cols-5 gap-8">
-          <div className="col-span-3 lg:col-span-2 w-full h-full p-4 shadow-xl shadow-gray-400 rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="p-4 h-full">
+          {/* Left side */}
+          <div className="col-span-3 lg:col-span-2 w-full h-full p-4 shadow-xl shadow-gray-400 rounded-xl">
+            <div className="lg:p-4 h-full rounded-xl">
               <div>
                 <Image
-                  className="rounded-xl "
                   src="/../public/assets/contact/contact3.jpg"
                   width="640"
                   height="430"
                   alt="/"
+                  className="rounded-xl hover:scale-105 ease-in duration-300"
                 />
               </div>
+              <div>
+                <h2 className="py-2">Catherine Vuthi</h2>
+                <p>Full-stack Developer</p>
+                <p className="py-4">
+                  I am available for freelance or full-time positions. Contact
+                  me and lets talk.
+                </p>
+              </div>
+              <div>
+                <p className="uppercase pt-8">Connect With Me</p>
+                <div className="flex items-center justify-between py-4">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <FaGithub size={20} />
+                  </div>
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <FaLinkedinIn size={20} />
+                  </div>
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <AiOutlineTwitter size={20} />
+                  </div>
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <AiOutlineMail size={20} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Form */}
+
+          <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
+            <div className="p-4">
+              <form>
+                <div className="grid md:grid-cols-2 gap-4 w-full py-2">
+                  <div className="flex flex-col">
+                    <label className=" uppercase text-sm py-2">Name</label>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
