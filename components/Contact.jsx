@@ -17,7 +17,7 @@ const Contact = () => {
             <div className="lg:p-4 h-full rounded-xl">
               <div>
                 <Image
-                  src="/../public/assets/contact/contact3.jpg"
+                  src="/../public/assets/contact/contact5.jpg"
                   width="640"
                   height="430"
                   alt="/"
