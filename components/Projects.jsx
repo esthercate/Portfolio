@@ -23,21 +23,21 @@ const Projects = () => {
             title="Facebook Clone"
             backgroundImg={project3}
             languageUsed="Vue JS"
-            projectUrl="/project3"
+            projectUrl="/muveasy"
           />
 
           <ProjectItem
             title="Facebook Clone"
             backgroundImg={project3}
             languageUsed="Vue JS"
-            projectUrl="/project3"
+            projectUrl="/muveasy"
           />
 
           <ProjectItem
             title="Hospital Finder"
             backgroundImg={project1}
             languageUsed="React JS"
-            projectUrl="/project1"
+            projectUrl="/hospital"
           />
         </div>
       </div>

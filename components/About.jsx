@@ -23,7 +23,7 @@ const About = () => {
             />
           </div>
           <div className="w-full px-8 mt-8">
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-justify">
               A web developer, with extensive knowledge and years of experience,
               working in web technologies and UI/UX,delivering quality work. Web
               developer, with extensive knowledge and years of experience,

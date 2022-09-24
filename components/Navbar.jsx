@@ -12,8 +12,9 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-
-  const [shadow, setShadow] = useState(false)
+  const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#1f2937");
 
   const handleNav = () => {
     setNav(!nav);
@@ -121,19 +122,29 @@ const Navbar = () => {
             <div className="py-6 flex flex-col">
               <ul className="uppercase">
                 <Link href="/">
-                  <li className="py-4 text-sm">Home</li>
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    Home
+                  </li>
                 </Link>
                 <Link href="/#about">
-                  <li className="py-4 text-sm">About</li>
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    About
+                  </li>
                 </Link>
                 <Link href="/#skills">
-                  <li className="py-4 text-sm">Skills</li>
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    Skills
+                  </li>
                 </Link>
                 <Link href="/#projects">
-                  <li className="py-4 text-sm">Portfolio</li>
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    Portfolio
+                  </li>
                 </Link>
                 <Link href="/#contact">
-                  <li className="py-4 text-sm">Contact</li>
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    Contact
+                  </li>
                 </Link>
               </ul>
               <div className="pt-40">

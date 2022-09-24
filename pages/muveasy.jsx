@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 import Image from "next/image";
-import project1 from "../public/assets/projects/project1.jpg";
+import project3 from "../public/assets/projects/project3.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-const hospital = () => {
+const muveasy = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -13,11 +13,11 @@ const hospital = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={project1}
+          src={project3}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10">
-          <h2 className="py-3">Hospital Finder</h2>
+          <h2 className="py-3">MUVEasy</h2>
           <h3>HTML / Tailwind / Javascript / Mapbox API</h3>
         </div>
       </div>
@@ -50,19 +50,19 @@ const hospital = () => {
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-2" /> HTML
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-2" /> CSS
+                <RiRadioButtonFill className="pr-2" /> React JS
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-2" /> Tailwind
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-2" /> Javascript
+                <RiRadioButtonFill className="pr-2" /> Ruby
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-2" /> Mapbox API
+                <RiRadioButtonFill className="pr-2" /> Rails
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-2" /> Heroku
               </p>
             </div>
           </div>
@@ -75,4 +75,4 @@ const hospital = () => {
   );
 };
 
-export default hospital
+export default muveasy;
