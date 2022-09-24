@@ -16,7 +16,7 @@ const Projects = () => {
             title="Hospital Finder"
             backgroundImg={project1}
             languageUsed="React JS"
-            projectUrl="/project1"
+            projectUrl="/hospital"
           />
 
           <ProjectItem

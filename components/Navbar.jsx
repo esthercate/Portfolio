@@ -39,12 +39,14 @@ const Navbar = () => {
       }
     >
       <div className="flex justify-between items-center w-full h-full px-6 2xl:px-16">
-        <Image
-          src="/../public/assets/logo/logo.png"
-          alt="/"
-          width="250"
-          height="60"
-        />
+        <Link href="/">
+          <Image
+            src="/../public/assets/logo/logo.png"
+            alt="/"
+            width="250"
+            height="60"
+          />
+        </Link>
 
         <div>
           <ul className="hidden md:flex">
@@ -101,12 +103,14 @@ const Navbar = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between border-b border-gray-300 pb-5">
-              <Image
-                src="/../public/assets/logo/logo.png"
-                width="100"
-                height="35"
-                alt="/"
-              />
+              <Link href="/">
+                <Image
+                  src="/../public/assets/logo/logo.png"
+                  width="100"
+                  height="35"
+                  alt="/"
+                />
+              </Link>
               <div
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
@@ -119,16 +123,16 @@ const Navbar = () => {
                 <Link href="/">
                   <li className="py-4 text-sm">Home</li>
                 </Link>
-                <Link href="/">
+                <Link href="/#about">
                   <li className="py-4 text-sm">About</li>
                 </Link>
-                <Link href="/">
+                <Link href="/#skills">
                   <li className="py-4 text-sm">Skills</li>
                 </Link>
-                <Link href="/">
+                <Link href="/#projects">
                   <li className="py-4 text-sm">Portfolio</li>
                 </Link>
-                <Link href="/">
+                <Link href="/#contact">
                   <li className="py-4 text-sm">Contact</li>
                 </Link>
               </ul>
