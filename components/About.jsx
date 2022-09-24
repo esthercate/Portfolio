@@ -4,7 +4,7 @@ import { AiOutlineDownload } from "react-icons/ai";
 
 const About = () => {
   return (
-    <div className="w-full md:h-screen p-4">
+    <div id="about" className="w-full md:h-screen p-4">
       <div className="w-full m-auto lg:px-20">
         <p className="uppercase text-xl tracking-widest text-[#6fb632]">
           About
