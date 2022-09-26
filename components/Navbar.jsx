@@ -14,16 +14,16 @@ import { useRouter } from "next/router";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [navBg, setNavBg] = useState("#effbff");
   const [linkColor, setLinkColor] = useState("#1f2937");
   const router = useRouter();
 
   useEffect(() => {
     if (router.asPath === "/hospital" || router.asPath === "/muveasy") {
       setNavBg("transparent");
-      setLinkColor("#ecf0f3");
+      setLinkColor("#effbff");
     } else {
-      setNavBg("#ecf0f3");
+      setNavBg("#effbff");
       setLinkColor("#1f2937");
     }
   }, [router]);
@@ -54,12 +54,7 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center w-full h-full px-6 2xl:px-16">
         <Link href="/">
-          <Image
-            src="/../public/assets/logo/logo.png"
-            alt="/"
-            width="250"
-            height="60"
-          />
+          <h3 className="text-[#6fb632] text-2xl">Catherine</h3>
         </Link>
 
         <div>
@@ -124,12 +119,7 @@ const Navbar = () => {
           <div>
             <div className="flex w-full items-center justify-between border-b border-gray-300 pb-5">
               <Link href="/">
-                <Image
-                  src="/../public/assets/logo/logo.png"
-                  width="100"
-                  height="35"
-                  alt="/"
-                />
+                <h3 className="text-[#6fb632] text-2xl">Catherine</h3>
               </Link>
               <div
                 onClick={handleNav}

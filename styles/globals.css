@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
   scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
 }
 
 @layer base {
   body {
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
+    @apply bg-[#effbff] text-[#1f2937] tracking-wide;
   }
 
   h1,
@@ -34,6 +36,10 @@ html {
 
   button {
     @apply shadow-xl shadow-gray-400 rounded-lg bg-[#6fb632] text-white
+  }
+
+  input, textarea{
+    @apply bg-[#effbff];
   }
 
 }
