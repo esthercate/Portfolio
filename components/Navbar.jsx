@@ -21,9 +21,9 @@ const Navbar = () => {
   useEffect(() => {
     if (router.asPath === "/hospital" || router.asPath === "/muveasy") {
       setNavBg("transparent");
-      setLinkColor("#effbff");
+      setLinkColor("#ffffff");
     } else {
-      setNavBg("#effbff");
+      setNavBg("#ffffff");
       setLinkColor("#1f2937");
     }
   }, [router]);

@@ -10,7 +10,7 @@ html {
 
 @layer base {
   body {
-    @apply bg-[#effbff] text-[#1f2937] tracking-wide;
+    @apply bg-[#FFFFFF] text-[#1f2937] tracking-wide;
   }
 
   h1,
@@ -39,7 +39,7 @@ html {
   }
 
   input, textarea{
-    @apply bg-[#effbff];
+    @apply bg-[#FFFFFF];
   }
 
 }
