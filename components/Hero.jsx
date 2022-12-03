@@ -8,7 +8,7 @@ const Hero = () => {
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
         <div>
           <h1 className='py-4 text-gray-600 leading-[3rem]'>
-            Beautifully Crafted User Experiences <br /> & Accessible Web Products<span className='text-p_green'>!</span>
+            Beautifully Crafted User Experiences <br /> & Accessible Web Products!
           </h1>
           <h3 className='pb-6 text-gray-500 max-w-[70%] m-auto'>
             Hi, I'm Catherine a <span className='text-p_green'>Full-stack Software Engineer</span>.
