@@ -11,8 +11,8 @@ const Hero = () => {
           <h1 className='py-4 text-gray-700'>
             Hi, I'm <span className='text-[#6fb632]'>Catherine</span>
           </h1>
-          <h1 className='py-2 text-gray-700'>Full Stack Web Developer</h1>
-          <p className='py-4 text-gray-400 max-w-[70%] m-auto'>I like to create great user experiences and accessible web products.</p>
+          <h1 className='py-2 text-gray-700'>Fullstack Software Engineer</h1>
+          <p className='py-4 text-gray-400 text-green max-w-[70%] m-auto'>I like to create great user experiences and accessible web products.</p>
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
             <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
               <FaGithub size={20} />
