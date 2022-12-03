@@ -34,7 +34,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleShadow = () => {
-      if (window.scrollY >= 90) {
+      if (window.scrollY >= 5) {
         setShadow(true)
       } else {
         setShadow(false)
@@ -45,27 +45,27 @@ const Navbar = () => {
 
   return (
     <div style={{ backgroundColor: `${navBg}` }} className={shadow ? 'w-full h-20 shadow-lg fixed z-[100]' : 'w-full h-20 fixed z-[100]'}>
-      <div className='flex justify-between items-center w-full h-full px-6 2xl:px-16'>
+      <div className='flex justify-between items-center w-full h-full px-24 2xl:px-16'>
         <Link href='/'>
-          <h3 className='text-[#6fb632] text-2xl'>Catherine.</h3>
+          <h3 className='text-p_green text-2xl'>Catherine.</h3>
         </Link>
 
         <div>
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
             <Link href='/'>
-              <li className='ml-10 text-sm uppercase hover:border-b border-b-[#6fb632]'>Home</li>
+              <li className='ml-8 text-sm font-semibold uppercase hover:border-b border-b-p_green hover:text-p_green'>Home.</li>
             </Link>
             <Link href='/#about'>
-              <li className='ml-10 text-sm uppercase hover:border-b border-b-[#6fb632]'>About</li>
+              <li className='ml-8 text-sm font-semibold uppercase hover:border-b border-b-p_green hover:text-p_green'>About.</li>
             </Link>
             <Link href='/#skills'>
-              <li className='ml-10 text-sm uppercase hover:border-b border-b-[#6fb632]'>Skills</li>
+              <li className='ml-8 text-sm font-semibold uppercase hover:border-b border-b-p_green hover:text-p_green'>Skills.</li>
             </Link>
             <Link href='/#projects'>
-              <li className='ml-10 text-sm uppercase hover:border-b border-b-[#6fb632]'>Portfolio</li>
+              <li className='ml-8 text-sm font-semibold uppercase hover:border-b border-b-p_green hover:text-p_green'>Portfolio.</li>
             </Link>
             <Link href='/#contact'>
-              <li className='ml-10 text-sm uppercase hover:border-b border-b-[#6fb632]'>Contact</li>
+              <li className='ml-8 text-sm font-semibold uppercase hover:border-b border-b-p_green hover:text-p_green'>Contact.</li>
             </Link>
             <Link href='/'>
               <li className='ml-5 text-xl cursor-pointer hover:scale-105 ease-in duration-300'>
