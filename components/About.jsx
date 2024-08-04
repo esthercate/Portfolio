@@ -15,8 +15,8 @@ const About = () => {
         <div className="max-w-[1240px] m-auto md:flex gap-8">
           <div className="w-full m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
-              src="/../public/assets/about/about.jpg"
-              alt="/"
+              src="/assets/about/about.jpg"
+              alt="Laptop Image"
               width="640"
               height="426"
               className="rounded-xl"
